@@ -1,0 +1,1 @@
+# dada un numero entero, imprimir la secuencia de umeros impares menores al numero
