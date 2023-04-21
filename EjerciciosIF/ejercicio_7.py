@@ -5,7 +5,7 @@ es_primo = True
 for num in range(2,numero):
     
     if numero % num == 0:
-        print("No es primo {} es divisor".format(num))
+        print("No es primo, {} es divisor".format(num))
         es_primo = False
     
 if es_primo:
