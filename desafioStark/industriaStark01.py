@@ -23,6 +23,10 @@ imprimir_lista(lista_hereo_femenino)
 
 
 def imprimir_hereo_mas_alto(lista:list):
+    
+    '''
+    Retorna el hereo mas alto recibiendo la lista como argumento
+    '''
     hereo_mas_alto = float(lista[0]['altura'])
     indice_heroe_mas_alto = lista[0]
 
@@ -41,7 +45,9 @@ def imprimir_hereo_mas_alto(lista:list):
 
 
 def imprimir_hereo_mas_bajo(lista:list):
-
+    '''
+    Retorna el hereo mas bajo recibiendo la lista como argumento
+    '''
     hereo_mas_bajo = float(lista[0]['altura'])
     indice_heroe_mas_bajo = lista[0]
     #buscamos el mas bajo
@@ -57,6 +63,9 @@ def imprimir_hereo_mas_bajo(lista:list):
 
 
 def imprimir_promedio_altura(lista:list):
+    '''
+    Recibe una lista y retorna el promedio de altura de la lista
+    '''
     altura_total_hereos = 0
     numero_hereos= len(lista)
     for hereo in lista:
@@ -70,6 +79,9 @@ def imprimir_promedio_altura(lista:list):
 
 
 def contador_hereos_color_ojos(lista:list):
+    '''
+    Recibe una lista y retorna una lista el contando los tipos de color de ojos
+    '''
     tipos_color_ojos = {}
     for heroe in lista:
         if heroe["color_ojos"] not in tipos_color_ojos:
@@ -80,6 +92,9 @@ def contador_hereos_color_ojos(lista:list):
 
 
 def contador_hereos_color_pelo(lista:list):
+    '''
+    Recibe una lista y retorna una lista el contando los tipos de color de pelo
+    '''
     tipos_color_pelo = {}
     for heroe in lista:
         if heroe["color_pelo"] not in tipos_color_pelo:
@@ -92,6 +107,9 @@ def contador_hereos_color_pelo(lista:list):
  
 
 def contador_tipo_inteligencia(lista:list):
+    '''
+    Recibe una lista y retorna una lista el contando los tipos de inteligencia
+    '''
     tipos_inteligencia = {}
     for heroe in lista:
         if heroe["inteligencia"] not in tipos_inteligencia:
@@ -141,10 +159,3 @@ def agrupador_inteligencia(lista:list):
             corregimos_lista.append(heroe["nombre"])
             agrupacion_heroe_por_inteligencia[heroe["inteligencia"]] = corregimos_lista
     return agrupacion_heroe_por_inteligencia
-
-
-
-
-
-
-
